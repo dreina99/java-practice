@@ -1,6 +1,6 @@
 import java.awt.Graphics;
 
-public class StraightMover {
+public class StraightMover implements Mover {
     private int x;
     private int y;
     private int xDirection;

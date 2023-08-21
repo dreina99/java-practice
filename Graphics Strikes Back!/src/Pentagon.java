@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Pentagon implements Sprite{
+public class Pentagon implements Sprite {
     private Color color;
     int width;
     int height;

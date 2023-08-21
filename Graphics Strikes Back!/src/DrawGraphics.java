@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class DrawGraphics {
     Bouncer movingBox;
     Bouncer movingPentagon;
-    StraightMover straightBox;
-    StraightMover straightPent;
+    Mover straightBox;
+    Mover straightPent;
     ArrayList<Mover> movers = new ArrayList<Mover>();
     
     /** Initializes this class for drawing. */
@@ -21,9 +21,9 @@ public class DrawGraphics {
         movingPentagon = new Bouncer(150, 150, pent);
         movingPentagon.setMovementVector(-3, 1);
 
-        straightBox = new StraightMover(40, 70, box2);
+        straightBox = new Mover(40, 70, box2);
         straightBox.setMovementVector(4, 0);
-        straightPent = new StraightMover(260, 230, pent2);
+        straightPent = new Mover(260, 230, pent2);
         straightPent.setMovementVector(-4, 0);
 
         movers.add(movingBox);

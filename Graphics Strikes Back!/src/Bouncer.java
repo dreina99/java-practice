@@ -30,7 +30,7 @@ public class Bouncer {
         y += yDirection;
 
         // bounce conditions for pentagons
-        if(this.sprite instanceof Star) {
+        if(this.sprite instanceof Pentagon) {
             // check x - width for pentagon 
             if ((x - this.sprite.getWidth() <= 0 && xDirection < 0) ||
             (x + sprite.getWidth() >= SimpleDraw.WIDTH && xDirection > 0)) {

@@ -8,7 +8,7 @@ public class DrawGraphics {
     /** Initializes this class for drawing. */
     public DrawGraphics() {
         Rectangle box = new Rectangle(15, 20, Color.RED);
-        Star star = new Star(50, 50, Color.BLUE);
+        Pentagon star = new Pentagon(50, 50, Color.BLUE);
 
         movingSprite = new Bouncer(100, 170, box);
         movingPentagon = new Bouncer(150, 150, star);

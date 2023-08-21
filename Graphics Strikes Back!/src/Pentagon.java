@@ -1,10 +1,7 @@
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.util.Arrays;
 
-public class Star implements Sprite{
+public class Pentagon implements Sprite{
     private Color color;
     int width;
     int height;
@@ -13,7 +10,7 @@ public class Star implements Sprite{
     * Create a pentagon that has bounding box dimensions width and height, 
     * filled with color.
      */
-    public Star (int width, int height, Color color) {
+    public Pentagon (int width, int height, Color color) {
         this.width = width;
         this.height = height;
         this.color = color;
@@ -21,6 +18,7 @@ public class Star implements Sprite{
   
 
     public void draw(Graphics surface, int x, int y) {
+        // angle of side = 72 degrees
         double theta = 1.25664;
 
         // center to upper point of pentagon
